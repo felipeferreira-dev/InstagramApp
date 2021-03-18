@@ -1,4 +1,4 @@
-package br.com.dev.felipeferreira.instargramremake;
+package br.com.dev.felipeferreira.instagramremake;
 
 import org.junit.Test;
 

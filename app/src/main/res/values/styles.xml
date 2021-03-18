@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="EditTextLoginForm" parent="FormContainer">
+
+    <style name="EditTextLoginForm" >
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name=""
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginBottom">4dp</item>
     </style>
 
     <style name="FormContainer">
         <item name="android:layout_marginStart">36dp</item>
         <item name="android:layout_marginEnd">36dp</item>
     </style>
+
+    <style name="ButtonLoginForm" parent="FormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:background">@drawable/bg_button_login</item>
+    </style>
+
+    <style name="ButtonLoginForm.link" parent="ButtonLoginForm">
+        <item name="android:textColor">@color/colorSecundaryVariant</item>
+        <item name="android:background">@null</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextViewBaseLoginForm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grayText</item>
+    </style>
+
+    <style name="EditTextInputLoginForm" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">36dp</item>
+        <item name="android:layout_marginEnd">36dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="EditTextErrorLoginForm" >
+        <item name="android:textColor">@color/red</item>
+    </style>
+
 </resources>

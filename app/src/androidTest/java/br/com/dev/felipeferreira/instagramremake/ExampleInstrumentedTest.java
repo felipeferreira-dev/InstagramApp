@@ -1,4 +1,4 @@
-package br.com.dev.felipeferreira.instargramremake;
+package br.com.dev.felipeferreira.instagramremake;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("br.com.dev.felipeferreira.instargramremake", appContext.getPackageName());
+        assertEquals("br.com.dev.felipeferreira.instagramremake", appContext.getPackageName());
     }
 }
