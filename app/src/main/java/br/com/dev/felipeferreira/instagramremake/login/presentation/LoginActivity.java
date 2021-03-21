@@ -2,11 +2,13 @@ package br.com.dev.felipeferreira.instagramremake.login.presentation;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.Button;
@@ -24,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     TextInputLayout txtInputPassword;
     TextInputEditText editInputPassword;
 
-    Button btnEnter;
+    TestButton btnEnter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,18 +45,27 @@ public class LoginActivity extends AppCompatActivity {
         editInputEmail.addTextChangedListener(watcher);
         editInputPassword.addTextChangedListener(watcher);
 
+        btnEnter.showProgress(false);
+
         btnEnter.setOnClickListener(v -> {
 
-            txtInputEmail.setError("Email Inválido!");
-            //txtInputPassword.setError("Senha Inválida!");
+            btnEnter.showProgress(true);
 
-            editInputEmail.setBackground(ContextCompat.getDrawable(
-                    LoginActivity.this, R.drawable.bg_edit_text_error_login));
+            new Handler().postDelayed(() -> {
+                btnEnter.showProgress(false);
 
-            // editInputPassword.setBackground(ContextCompat.getDrawable(
-            //       LoginActivity.this, R.drawable.bg_edit_text_error_login));
+                txtInputEmail.setError("Email Inválido!");
+                //txtInputPassword.setError("Senha Inválida!");
 
-            txtInputPassword.setErrorIconDrawable(null);
+                editInputEmail.setBackground(ContextCompat.getDrawable(
+                        LoginActivity.this, R.drawable.bg_edit_text_error_login));
+
+                // editInputPassword.setBackground(ContextCompat.getDrawable(
+                //       LoginActivity.this, R.drawable.bg_edit_text_error_login));
+
+                txtInputPassword.setErrorIconDrawable(null);
+
+            }, 4000);
         });
     }
 

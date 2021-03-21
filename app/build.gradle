@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "br.com.dev.felipeferreira.instargramremake"
+        applicationId "br.com.dev.felipeferreira.instagramremake"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
