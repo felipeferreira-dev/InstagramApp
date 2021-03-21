@@ -32,42 +32,37 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edit_text_email_input_login"
                 style="@style/EditTextInputLoginForm"
-                app:boxStrokeColor="@color/white"
-                android:background="?attr/background"
-                app:hintEnabled="false"
                 android:hint="@string/email"
                 app:boxStrokeErrorColor="@color/red"
-                app:errorTextAppearance="@style/EditTextErrorLoginForm">
+                app:errorTextAppearance="@style/EditTextErrorLoginForm"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_email_login"
                     style="@style/EditTextLoginForm"
                     android:hint="@string/email"
-                    android:background="@drawable/bg_edit_text_login"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edit_text_password_input_login"
                 style="@style/EditTextInputLoginForm"
-                android:background="?attr/background"
-                app:hintEnabled="false"
-                app:boxStrokeColor="?attr/colorPrimary"
                 app:boxStrokeErrorColor="@color/red"
                 app:endIconMode="password_toggle"
-                app:errorTextAppearance="@style/EditTextErrorLoginForm">
+                app:errorTextAppearance="@style/EditTextErrorLoginForm"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_password_login"
                     style="@style/EditTextLoginForm"
                     android:hint="@string/password"
-                    android:background="@null"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_enter_login"
                 style="@style/ButtonLoginForm"
+                android:enabled="false"
                 android:text="@string/enter" />
 
             <FrameLayout

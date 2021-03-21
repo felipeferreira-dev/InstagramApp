@@ -17,6 +17,7 @@
     <style name="TelaDeLoginTheme" parent="Theme.InstagramRemake.NoStatusBar" >
         <item name="background">@color/grayDark</item>
         <item name="colorPrimary">@color/white</item>
+        <item name="boxStrokeColor">@color/grayBorder</item>
     </style>
 
 </resources>
