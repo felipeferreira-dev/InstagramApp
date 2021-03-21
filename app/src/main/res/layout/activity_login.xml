@@ -59,6 +59,11 @@
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Trocando o component AppCompatButton, pela classe que eu mesmo criei TestButton
+            Todos os atributos que eu quiser definir dinamicamente no código, eu preciso adicionar
+            o "app". EX: app:text.. poderia ser qualquer nome EX: app:text_qualquer_nome
+            eu preciso criar uma referência para esse app, então na pasta Values eu crio o XML attrs
+            e lá defino todos os atributos que escolhi como app -->
             <br.com.dev.felipeferreira.instagramremake.login.presentation.TestButton
                 android:id="@+id/btn_enter_login"
                 android:layout_width="match_parent"

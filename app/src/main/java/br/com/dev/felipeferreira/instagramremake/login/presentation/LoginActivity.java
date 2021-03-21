@@ -45,12 +45,12 @@ public class LoginActivity extends AppCompatActivity {
         editInputEmail.addTextChangedListener(watcher);
         editInputPassword.addTextChangedListener(watcher);
 
-        btnEnter.showProgress(false);
-
         btnEnter.setOnClickListener(v -> {
 
             btnEnter.showProgress(true);
 
+            // Simulando um atraso de delay de 4 segundos (após o delay eu escondo a progressBar e
+            // Exibo uma mensagem de erro no campo de Email
             new Handler().postDelayed(() -> {
                 btnEnter.showProgress(false);
 
@@ -77,10 +77,9 @@ public class LoginActivity extends AppCompatActivity {
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-            if (!s.toString().isEmpty())
-                btnEnter.setEnabled(true);
-            else
-                btnEnter.setEnabled(false);
+            // ? == if = se
+            // : == else = se não
+                btnEnter.setEnabled(!s.toString().isEmpty() ? true : false);
         }
 
         @Override
