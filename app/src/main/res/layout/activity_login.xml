@@ -64,7 +64,7 @@
             o "app". EX: app:text.. poderia ser qualquer nome EX: app:text_qualquer_nome
             eu preciso criar uma referência para esse app, então na pasta Values eu crio o XML attrs
             e lá defino todos os atributos que escolhi como app -->
-            <br.com.dev.felipeferreira.instagramremake.login.presentation.TestButton
+            <br.com.dev.felipeferreira.instagramremake.login.presentation.LoadingButton
                 android:id="@+id/btn_enter_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

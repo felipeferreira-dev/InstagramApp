@@ -2,17 +2,12 @@ package br.com.dev.felipeferreira.instagramremake.login.presentation;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
 
-import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.widget.Button;
-import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -26,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     TextInputLayout txtInputPassword;
     TextInputEditText editInputPassword;
 
-    TestButton btnEnter;
+    LoadingButton btnEnter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

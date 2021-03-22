@@ -16,25 +16,25 @@ import androidx.core.content.ContextCompat;
 import br.com.dev.felipeferreira.instagramremake.R;
 
 // Extendendo um FrameLayout pois é o layout que quero inflar! Poderia ser qualquer outro
-public class TestButton extends FrameLayout {
+public class LoadingButton extends FrameLayout {
 
     private AppCompatButton button;
     private ProgressBar progress;
     private String text;
 
-    public TestButton(@NonNull Context context) {
+    public LoadingButton(@NonNull Context context) {
         super(context);
         setup(context, null);
     }
 
     // Utilizamos esses "attrs" (Atributos) para pegar a referência dos atributos do XML
     // e alterar eles dinamicamente no código.
-    public TestButton(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public LoadingButton(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setup(context, attrs);
     }
 
-    public TestButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public LoadingButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setup(context, attrs);
     }

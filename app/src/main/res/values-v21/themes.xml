@@ -17,6 +17,13 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="TelaDeLoginTheme" parent="Theme.InstagramRemake.NoStatusBar" >
+        <item name="background">@color/white</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="boxStrokeColor">@color/grayBorder</item>
+    </style>
+
+ <!-- ****************************************************************************************** -->
     <style name="Theme.InstagramRemake.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -31,11 +38,4 @@
     <style name="NoShadowButton" parent="android:Widget.Button">
         <item name="android:stateListAnimator">@null</item>
     </style>
-
-    <style name="TelaDeLoginTheme" parent="Theme.InstagramRemake.NoStatusBar" >
-        <item name="background">@color/white</item>
-        <item name="colorPrimary">@color/black</item>
-        <item name="boxStrokeColor">@color/grayBorder</item>
-    </style>
-
 </resources>
