@@ -8,6 +8,7 @@
     tools:context=".register.presentation.RegisterActivity">
 
     <ScrollView
+        android:id="@+id/scrollview_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom">
@@ -19,10 +20,10 @@
 
             <fragment
                 android:id="@+id/register_fragment"
-                android:name="br.com.dev.felipeferreira.instagramremake.register.presentation.RegisterNamePasswordFragment"
                 android:layout_width="match_parent"
+                android:name="br.com.dev.felipeferreira.instagramremake.register.presentation.RegisterPhotoFragment"
                 android:layout_height="wrap_content"
-                tools:layout="@layout/fragment_register_name_password" />
+                tools:layout="@layout/fragment_register_photo" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
